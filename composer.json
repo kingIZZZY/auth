@@ -22,15 +22,15 @@
     "require": {
         "php": "^8.2",
         "nesbot/carbon": "^2.72.6",
-        "hyperf/context": "~3.1.0",
-        "hyperf/stringable": "~3.1.0",
-        "hyperf/macroable": "~3.1.0",
-        "hyperf/contract": "~3.1.0",
-        "hyperf/config": "~3.1.0",
-        "hyperf/database": "~3.1.0",
-        "hyperf/http-server": "~3.1.0",
-        "hypervel/hashing": "^0.1",
-        "hypervel/jwt": "^0.1"
+        "hyperf/context": "3.2.x-dev",
+        "hyperf/stringable": "3.2.x-dev",
+        "hyperf/macroable": "3.2.x-dev",
+        "hyperf/contract": "3.2.x-dev",
+        "hyperf/config": "3.2.x-dev",
+        "hyperf/database": "3.2.x-dev",
+        "hyperf/http-server": "3.2.x-dev",
+        "hypervel/hashing": "dev-edge-hyperf3.2",
+        "hypervel/jwt": "dev-edge-hyperf3.2"
     },
     "suggest": {
         "hypervel/session": "Required to use session guard. (~0.1.0)"
@@ -54,5 +54,15 @@
     "config": {
         "sort-packages": true
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "github",
+            "url": "https://github.com/kingIZZZY/hashing"
+        },
+        {
+            "type": "github",
+            "url": "https://github.com/kingIZZZY/jwt"
+        }
+    ]
 }
